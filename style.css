@@ -1,0 +1,16 @@
+
+div{
+    border: 2px solid;
+}
+.checked {
+    color: orange;
+  }
+
+  .titulo{
+    margin-top:6px;
+    margin-bottom:2px!important;
+  }
+  img{
+    margin: 0 auto;
+  }
+    
