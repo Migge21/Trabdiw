@@ -3,6 +3,14 @@
 }
 /*Navbar*/
 
+.venda{
+  margin-bottom: 10px;
+}
+.fa-shopping-cart{
+font-size: 20px!important;
+}
+
+
 /*Area dos cards*/
 .corpin{
     margin-bottom: 15px;
