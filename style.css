@@ -1,55 +1,78 @@
-:root{
-    --cinza:#c3c3c3f7;
+  :root{
+    
+    --fundo_principal:#303030;
+    ;
 }
-/*Navbar*/
 
-.venda{
-  margin-bottom: 10px;
+body{
+  background-color:var(--fundo_principal)!important;
 }
-.fa-shopping-cart{
+
+  .text,label,h3,h4,h5,h7,h9,p{
+  color: red!important;
+}
+
+large, .texto-footer{
+  color: green;
+}
+
+/*Navbar*/
+  .logotipo{
+  width: 100px;
+  height: 100px;
+}
+ 
+  .compras{
 font-size: 20px!important;
 }
+/*Fim do navbar*/
 
+/*FIltro*/
+
+/*FIm do filtro*/
 
 /*Area dos cards*/
-.corpin{
+.card-body img{
+  height: 150px;
+  width: 150px;
+}
+  .corpo-cards-cinzas{
     margin-bottom: 15px;
-    border: 3px solid;
-    background-color: var(--cinza);
+    border: 1px solid red;
+    background-color: var(--fundo_principal);
 }
 
-
-.checked {
+  .checked {
     color: orange;
-  }
+}
+ .small,.color-num-avaliacoes{
+  color: white;
+ }
 
-  .titulo{
-    margin-top:6px;
-    margin-bottom:2px!important;
-  }
-
-  img{
-    height: 200px;
-    width: 200px;
-  }
 
   .card-espaco{
     width: 290px!important;
+    background-color: var(--fundo_principal)!important;
   }
-  
+
+  .card.card-espaco{
+    border: 1px solid red;
+    background-color: var(--fundo_principal)!important;
+  }
+
   .imagem_venda_esquerda{
     height: 120px;
     width: 110px;
   }
 
   hr.new4 {
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid red;
     width: 80%;
   }
 
   .card-transparente{
     border: 0 solid!important;
-    background-color: var(--cinza)!important;
+    background-color: var(--fundo_principal)!important;
   }
 
   .input_letter{
@@ -65,4 +88,72 @@ font-size: 20px!important;
   }
   /*Fim dos cards*/
 
+  /*Carrossel*/
+
+  .imagem-carrossel{
+    width: 500px;
+    height: 400px;
+  }
+
   /*Footer*/
+  .footer-color{
+   background-color: var(--fundo_principal);
+  }
+
+  /*Fim do footer*/
+
+  /*Responsividade cards*/
+  @media (max-width: 575.98px){
+    .card-columns .card {
+      margin-left: 35px;
+  }
+
+  .corpo-cards-cinzas{
+    margin-bottom: 15px;
+    border: 1px solid red;
+}
+.imagem-carrossel{
+  width: 250px;
+  height: 250px;
+}
+}
+
+@media (min-width: 576px) and (max-width:767.98px){
+  .card-columns .card {
+    margin-left: -35px;
+}
+}
+
+  @media (min-width: 768px) and (max-width: 991.98px){
+    
+    .card-espaco{
+      width: 240px!important;
+    }
+   
+    .corpo-cards-cinzas{
+      margin-left:55px;
+      margin-bottom: 15px;
+      border: 1px solid red;
+  }
+  .imagem-carrossel{
+    width: 350px;
+    height: 350px;
+  }
+  }
+
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    .card-espaco{
+      width: 240px!important;
+      
+    }
+    }
+    @media (min-width: 1200px) { 
+      .card-espaco{
+        width: 250px!important;
+        
+      }
+      
+    }
+  
+
+
