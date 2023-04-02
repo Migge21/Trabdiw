@@ -28,7 +28,9 @@ font-size: 20px!important;
 /*Fim do navbar*/
 
 /*FIltro*/
-
+.filtro{
+  border: 1px solid red;
+}
 /*FIm do filtro*/
 
 /*Area dos cards*/
@@ -82,7 +84,7 @@ font-size: 20px!important;
     padding: 0.375rem 0.75rem;
     font-size: 1rem;
     line-height: 2.0;
-    border: 0px solid #ced4da;
+    border: 0px solid;
     border-radius: 2px;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
   }
