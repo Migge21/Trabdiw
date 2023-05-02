@@ -1,4 +1,4 @@
 # Trabalho prático de Desenvolvimento de Interface Web
 
-Página inicial de uma loja de venda.
+Página inicial de uma loja de venda de jogos.
 
