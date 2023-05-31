@@ -14,6 +14,10 @@ function mostrar(arroz) {
           
           <div class="small">
             <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
             (${produto.rating.rate})
           </div>
           <div class="d-flex flex-column">

@@ -161,3 +161,12 @@ p,
   flex-direction: column;
   padding: 20px;
 }
+.bb {
+  border: 6px solid green;
+  width: 20px;
+}
+.h3 span,
+h4 span,
+.DetalhesDescricao {
+  color: green !important;
+}
