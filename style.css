@@ -11,15 +11,13 @@ label,
 h3,
 h4,
 h5,
-h7,
-h9,
-a.nav-link,
-p {
+a.nav-link {
   color: red !important;
 }
 
-large,
-.texto-footer {
+p,
+.texto-footer,
+.green {
   color: green;
 }
 /*=================================================PÁGINA INICIAL=================================================================================*/
@@ -64,8 +62,8 @@ large,
   height: fit-content;
 }
 .CardContainer {
-  width: 200px;
-  height: 350px;
+  width: 250px;
+  height: 400px;
   border: 1px solid red;
   display: flex;
   flex-wrap: wrap;
@@ -73,7 +71,7 @@ large,
   padding: 20px;
 }
 .CardTitulo {
-  font-size: 15px;
+  font-size: 13px;
   padding-top: 20px;
 }
 .CardConteudo {
@@ -119,6 +117,9 @@ large,
   }
   .CardContainer {
     width: 220px;
+    justify-content: center;
+
+    margin: 20px;
   }
 
   .corpo-cards-cinzas {
@@ -144,11 +145,17 @@ large,
     width: 350px;
     height: 350px;
   }
+  .CardContainer {
+    width: 200px;
+  }
+  .CardContainer img {
+    height: 100px;
+  }
 }
 /*=================================================PÁGINA INICIAL=================================================================================*/
 .DetalhesContainer {
   border: 2px solid red;
-  width: 100%;
+  width: 80%;
   height: fit-content;
   display: flex;
   flex-direction: column;
