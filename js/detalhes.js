@@ -14,14 +14,12 @@ function exibirDetalhes(produto) {
   <div class="d-flex flex-row">
   <div class="DetalhesContainer">
     <div class="DetalhesConteudo">
-      <div class="d-flex">
-        <div class="d-flex pr-2">
+      <div class="separacao">
+        <div class="pr-2">
           <img
+          class="produto-detalhesimg"
             src="${produto.image}"
             alt=""
-            width="400px"
-            height="300px"
-            
           />
         </div>
         <div class="p-3">
@@ -31,8 +29,8 @@ function exibirDetalhes(produto) {
           
           <h3>Descrição:<br /></h3>
           <p class="DetalhesDescricao">${produto.description}</p>
-          <a class="btn btn-primary">Comprar</a>
-          <a class="btn btn-primary" href="index.html">Voltar</a>
+          <a class="btn btn-outline-danger">Comprar</a>
+          <a class="btn btn-outline-success" href="index.html">Voltar</a>
         </div>
       </div>
     </div>

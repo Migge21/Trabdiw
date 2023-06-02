@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -15,7 +15,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Document</title>
   </head>
   <body>
@@ -45,7 +48,7 @@
               Olá seja bem vindo,<br />Miguel Sanches Braga Inácio<br />Matrícula:1447044
             </h3>
             <form class="d-flex mx-auto col-8 col-lg-6" role="search">
-              <div class="input-group mb-3">
+              <div class="input-group mb-3 search">
                 <input
                   type="text"
                   class="form-control"
@@ -54,6 +57,7 @@
                   aria-describedby="basic-addon2"
                   id="palavraChaveInput"
                 />
+
                 <input
                   type="button"
                   class="btn btn-success input-group-text"
@@ -62,8 +66,9 @@
                 />
               </div>
             </form>
+
             <ul
-              class="d-flex justify-content-end navbar-nav ms-auto align-self-start"
+              class="d-flex justify-content-end navbar-nav ms-auto mb-2 mb-lg-0"
             >
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#"
@@ -81,11 +86,12 @@
         </div>
       </nav>
     </header>
-    <!--FIM DO NAVBAR-->
-    <div>
-      <section class="d-flex flex-wrap" id="detalhesProduto"></section>
-    </div>
-    <!--INICIO DO FOOTER-->
+
+    <section
+      class="d-flex flex-wrap justify-content-center"
+      id="ResultadoPesquisa"
+    ></section>
+
     <footer class="footer-color container-fluid">
       <div class="my-md-3 row text-center d-flex justify-content-center">
         <div class="col-12 col-md col-lg-2">
@@ -394,6 +400,10 @@
         Todos os direitos reservados. Games shop © 2023.
       </p>
     </footer>
+
+    <script src="js/pesquisa.js"></script>
+    <script src="js/detalhes.js"></script>
+    <script src="js/filtro.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
       integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
@@ -404,7 +414,8 @@
       integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
       crossorigin="anonymous"
     ></script>
-    <script src="js/pesquisa.js"></script>
-    <script src="js/detalhes.js"></script>
+    <script>
+      window.onload = buscarPorPalavraChave();
+    </script>
   </body>
 </html>

@@ -41,7 +41,7 @@ p,
   border: 1px solid red;
   background-color: var(--fundo_principal);
   width: 300px;
-  height: 800px;
+  height: 930px;
   margin-right: 20px;
 }
 
@@ -54,8 +54,8 @@ p,
 }
 
 .imagem_venda_esquerda {
-  height: 120px;
-  width: 110px;
+  height: 90px;
+  width: 90px;
 }
 .containerDireita {
   width: 900px;
@@ -84,6 +84,7 @@ p,
 .CardConteudoEsquerda {
   display: flex;
   margin: 20px;
+  align-items: center;
 }
 
 /*Fim dos cards*/
@@ -159,14 +160,33 @@ p,
   height: fit-content;
   display: flex;
   flex-direction: column;
+
   padding: 20px;
 }
-.bb {
-  border: 6px solid green;
-  width: 20px;
+.separacao {
+  display: flex;
 }
+.produto-detalhesimg {
+  width: 400px;
+  height: 300px;
+}
+
 .h3 span,
 h4 span,
 .DetalhesDescricao {
   color: green !important;
+}
+
+@media (max-width: 575.98px) {
+  .DetalhesContainer {
+    flex-wrap: wrap;
+    width: fit-content;
+  }
+  .separacao {
+    flex-wrap: wrap;
+  }
+  .produto-detalhesimg {
+    width: 350px;
+    height: 260px;
+  }
 }
